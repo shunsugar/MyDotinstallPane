@@ -1,0 +1,162 @@
+body{
+font-size: 16px;
+font-family: Verdana, sans-serif;
+color: #333;
+margin: 0;
+}
+
+.container{
+width: 820px;
+margin: 0 auto;
+padding: 60px 0;
+}
+
+.orange-bg{
+color:#fff;
+background: url(../img/bg.png);
+background-size: cover;
+}
+
+.section-title{
+text-align: center;
+font-weight: normal;
+font-size: 24px;
+margin-bottom: 60px;
+margin-top: 0;
+}
+
+.section-title::after{
+content: attr(data-subtitle);
+display: block;
+font-size: 16px;
+color:#aaa;
+padding-top: 10px;
+}
+
+.btn{
+  display: inline-block;
+  width: 290px;
+  background: #fff;/*背景色*/
+  color: #f39800;/*文字色*/
+  text-align: center;
+  text-decoration: none;/*下線を消す*/
+  padding: 8px 0px;
+  border-radius: 5px;
+  opacity: 0.9;/*透明度的な*/
+}
+
+.btn:hover{
+  opacity: 1.0;
+}
+/*header*/
+
+header h1{
+margin-top:0;
+margin-bottom: 8px;
+font-weight: normal;
+font-size: 36px;
+}
+
+header p{
+margin-top: 0;
+margin-bottom: 50px;
+}
+
+header .container{
+position: relative;
+/* background: pink; */
+}
+
+header img{
+position: absolute;
+bottom: 0;
+right: 0;
+}
+
+
+/*features*/
+
+.feature:not(:last-child){/*最後の要素以外に適用*/
+  margin-bottom: 60px;
+}
+
+.feature h1{
+font-weight: normal;/*文字の太さ*/
+font-size: 18px;
+}
+
+.feature .desc{
+width: 360px;
+}
+
+.feature:nth-of-type(odd) .desc{/*クラスの奇数番目はnth-of-type(odd)で表現可能*/
+float: right;
+padding-left: 40px;
+}
+
+.feature:nth-of-type(even) .desc{/*クラスの偶数番目はnth-of-type(even)で表現可能*/
+float: left;
+padding-right: 40px;
+}
+
+.feature{
+  overflow: hidden;/*文が長い時レイアウトが崩れてしまうのでfloatを解除*/
+}
+
+/*Voices*/
+
+.voices{
+  background:#f8f8f8;
+}
+
+.voices .section-title{
+margin-bottom: 95px;
+}
+
+.voices .flex{
+  display:flex;/*横並び*/
+  justify-content: space-between;/*要素間の余白を均等に配置*/
+}
+
+.voice{
+  width: 250px;
+  background: #fff;
+  position: relative;/*絶対配置*/
+  box-sizing: border-box;/*widthを変えないでpaddingを適用*/
+  padding: 60px 40px 25px;
+}
+
+.voice img{
+  border-radius: 50%;/*画像を円形に*/
+  border: 10px solid #fff;/*白いボーダーを10pxで*/
+  position: absolute;/*絶対配置*/
+  left: 0;
+  right: 0;/*画像中央揃え*/
+  margin: 0 auto;
+
+  top: -55px;/*画像の半分上にずらす*/
+}
+
+.voice h1{
+  text-align: center;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+/*call-to-action*/
+
+.call-to-action{
+text-align: center;
+}
+
+.call-to-action .section-title {
+margin-bottom: 15px;
+}
+
+/*footer*/
+
+footer{
+  padding: 40px 0;
+  text-align: center;
+  color:#aaa;
+}
